@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .headerNav{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .headerA{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            a{
+                color: black;
+                text-decoration: none;
+            }
+        }
+        .allo{
+            display: none;
+            .alo{
+                ul{
+                    list-style: none;
+                    li{
+                        a{
+                            color: black;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+@media screen and (max-width: 600px) {
+    header{
+        .headerNav{
+            .headerA{
+                display: none;
+            }
+            .allo{
+                display: block;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+    header{
+        .headerNav{
+            .icone{
+                display: none;
+            }
+        }
+    }
+}
+
+section{
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    #myDiv{
+        width: 100%;
+        .myBox{
+            min-height: 300px;
+            margin-bottom: 20px;
+            img{
+                width: 100%;
+                margin-bottom: 20px;
+
+            }
+            p{
+                margin-bottom: 20px;
+            }
+            button{
+                width: 100px;
+                min-height: 40px;
+                border: none;
+                background-color: red;
+                color: white;
+                border-radius: 10px;
+                font-weight: 800;
+                &:hover{
+                    background-color: white;
+                    border: 3px solid red;
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+
+footer{
+    width: 100%;
+    min-height: 200px;
+    background-color: rgb(35, 35, 35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 30px;
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

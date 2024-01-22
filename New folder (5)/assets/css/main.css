@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .headerNav {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .headerNav .headerA {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+header .headerNav .headerA a {
+  color: black;
+  text-decoration: none;
+}
+header .headerNav .allo {
+  display: none;
+}
+header .headerNav .allo .alo ul {
+  list-style: none;
+}
+header .headerNav .allo .alo ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  header .headerNav .headerA {
+    display: none;
+  }
+  header .headerNav .allo {
+    display: block;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header .headerNav .icone {
+    display: none;
+  }
+}
+section {
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section #myDiv {
+  width: 100%;
+}
+section #myDiv .myBox {
+  min-height: 300px;
+  margin-bottom: 20px;
+}
+section #myDiv .myBox img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+section #myDiv .myBox p {
+  margin-bottom: 20px;
+}
+section #myDiv .myBox button {
+  width: 100px;
+  min-height: 40px;
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  font-weight: 800;
+}
+section #myDiv .myBox button:hover {
+  background-color: white;
+  border: 3px solid red;
+  color: red;
+}
+
+footer {
+  width: 100%;
+  min-height: 200px;
+  background-color: rgb(35, 35, 35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 30px;
+}
+footer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#prodactsAdd {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#prodactsAdd #tableDiv {
+  width: 100%;
+  border: 0.4px solid rgb(167, 167, 167);
+  margin-top: 20px;
+  padding-top: 20px;
+}
+#prodactsAdd #tableDiv .myBox {
+  width: 100%;
+  min-height: 130px;
+  border: 0.4px solid rgb(167, 167, 167);
+}
+#prodactsAdd #tableDiv .myBox td {
+  width: 25%;
+  min-height: 130px;
+  border: 0.4px solid rgb(167, 167, 167);
+  text-align: center;
+}
+#prodactsAdd #tableDiv .myBox td img {
+  width: 100px;
+  height: 60px;
+}
